@@ -4,16 +4,16 @@ import Link from "next/link";
 const navItems = [
   {
     title: "Home",
-    href: "/",
+    path: "/",
   },
-  { title: "About", href: "/about" },
+  { title: "About", path: "/about" },
   {
     title: "Projects",
-    href: "/projects",
+    path: "/projects",
   },
   {
     title: "Contact",
-    href: "/contact",
+    path: "/contact",
   },
 ];
 
@@ -21,10 +21,10 @@ export default function Navbar() {
   return (
     <>
       {navItems.map((item, i) => {
-        const { title, href } = item;
+        const { title, path } = item;
         return (
           <li key={i} className="font-bold">
-            <Link href={href}>{title}</Link>
+            <Link href={path}>{title}</Link>
           </li>
         );
       })}
