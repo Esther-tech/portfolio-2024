@@ -1,29 +1,40 @@
 import Link from "next/link";
 import React from "react";
+import NavItem from "./navItem";
+
+const navItems = [
+  {
+    title: "Home",
+    href: "/",
+  },
+  { title: "About", href: "/about" },
+  {
+    title: "Projects",
+    href: "/projects",
+  },
+  {
+    title: "Contact",
+    href: "/contact",
+  },
+];
 
 export default function Header() {
   return (
     <header className="flex justify-between py-5 px-7">
-      <div>
-        <Link href="/">
-          <div className="bg-[#4da5f5] px-2.5 py-1 rounded-sm text-white text-sm">
-            E
-          </div>
-        </Link>
-      </div>
-      <ul className="flex gap-10">
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
-        <li>
-          <Link href="/projects">Projects</Link>
-        </li>
-        <li>
-          <Link href="/contact">Contact</Link>
-        </li>
+      <Link href="/">
+        <div className="bg-[#4da5f5] px-2.5 py-1 rounded-sm text-white text-sm">
+          E
+        </div>
+      </Link>
+      <ul className="hidden md:flex gap-10">
+        {navItems.map((item, i) => {
+          const { title, href } = item;
+          return (
+            <li key={i}>
+              <NavItem title={title} href={href} />
+            </li>
+          );
+        })}
       </ul>
     </header>
   );
