@@ -1,6 +1,8 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import NavItem from "./navItem";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const navItems = [
   {
@@ -19,6 +21,7 @@ const navItems = [
 ];
 
 export default function Header() {
+  const [navOpen, setNavOpen] = useState<boolean>(false);
   return (
     <header className="flex justify-between py-5 px-7">
       <Link href="/">
@@ -26,7 +29,17 @@ export default function Header() {
           E
         </div>
       </Link>
-      <ul className="hidden md:flex gap-10">
+      <div className="mobile-nav md:hidden">
+        <button onClick={() => setNavOpen(!navOpen)}>
+          {navOpen ? (
+            <XMarkIcon className="h-5 w-5" />
+          ) : (
+            <Bars3Icon className="h-5 w-5" />
+          )}
+        </button>
+      </div>
+
+      <ul className="desktop-nav hidden md:flex gap-10">
         {navItems.map((item, i) => {
           const { title, href } = item;
           return (
