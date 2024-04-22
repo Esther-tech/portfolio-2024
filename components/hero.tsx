@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div>
+    <div id="home">
       <div>
         <h1>Hello, I am Esther</h1>
         <p>Mid-level frontend developer</p>
