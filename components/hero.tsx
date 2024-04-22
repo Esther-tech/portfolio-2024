@@ -1,11 +1,23 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Hero() {
   return (
-    <div id="home">
-      <div>
-        <h1 className="text-lg">Hi, I'm Esther</h1>
-        <p>Mid-level frontend developer</p>
+    <div>
+      <div className="flex gap-5 items-center">
+        <div className="h-20 w-20 rounded-full overflow-hidden">
+          <Image
+            src="/images/portfolio-img.jpg"
+            width={400}
+            height={400}
+            quality={100}
+            alt="Esther"
+          />
+        </div>
+        <div>
+          <h1 className="text-xl font-bold">Hi, I'm Esther</h1>
+          <p>Mid-level frontend developer</p>
+        </div>
       </div>
       <div>
         <h2 className="text-4xl">

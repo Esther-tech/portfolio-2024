@@ -5,5 +5,7 @@ export default function Container({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div className="max-w-screen-lg m-auto min-h-screen">{children}</div>;
+  return (
+    <div className="max-w-screen-md px-5 m-auto min-h-screen">{children}</div>
+  );
 }

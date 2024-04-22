@@ -1,9 +1,7 @@
-
-
 export const navItems = [
   {
     title: "Home",
-    path: "#home",
+    path: "/",
   },
   { title: "About", path: "#about" },
   {

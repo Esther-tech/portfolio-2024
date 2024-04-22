@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Quicksand, Playfair_Display, Noto_Serif_JP } from "next/font/google";
+import { Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Container from "@/components/container";
 
-const inter = Quicksand({ subsets: ["latin"] });
+const inter = Hanken_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Esther | Personal portfolio",
