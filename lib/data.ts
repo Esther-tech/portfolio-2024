@@ -15,3 +15,4 @@ export const navItems = [
     path: "#contact",
   },
 ];
+
