@@ -8,8 +8,9 @@ import Container from "@/components/container";
 const inter = Hanken_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Esther Siebert - Portfolio",
-  description: "Portfolio",
+  title: "Esther | Personal portfolio",
+  description:
+    "Esther Siebert is a frontend developer, specialized in React.js",
 };
 
 export default function RootLayout({
@@ -19,10 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-slate-50 text-slate-950`}>
         <Container>
           <Header />
-          <div className="pt-16">{children}</div>
+          <div className="pt-14">{children}</div>
           <Footer />
         </Container>
       </body>

@@ -6,8 +6,6 @@ export default function Container({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="max-w-screen-lg m-auto bg-gray-100 min-h-screen">
-      {children}
-    </div>
+    <div className="max-w-screen-md px-5 m-auto min-h-screen">{children}</div>
   );
 }
