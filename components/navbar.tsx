@@ -5,10 +5,13 @@ import { navItems } from "@/lib/data";
 export default function Navbar() {
   return (
     <>
-      {navItems.map((item, i) => {
+      {navItems.map((item) => {
         const { title, path } = item;
         return (
-          <li key={i} className="font-bold">
+          <li
+            key={path}
+            className="font-bold hover:text-slate-600 transition m-auto"
+          >
             <Link href={path}>{title}</Link>
           </li>
         );

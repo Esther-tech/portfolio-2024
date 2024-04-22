@@ -1,7 +1,7 @@
 export const navItems = [
   {
     title: "Home",
-    path: "/",
+    path: "#home",
   },
   { title: "About", path: "#about" },
   {
