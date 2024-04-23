@@ -28,7 +28,7 @@ export default function Header() {
         </ul>
       </div>
       {navOpen && (
-        <ul className="flex flex-col gap-2 w-full mt-4 mb-4">
+        <ul className="mobile-nav flex md:hidden flex-col gap-2 w-full mt-4 mb-4">
           <Navbar />
         </ul>
       )}

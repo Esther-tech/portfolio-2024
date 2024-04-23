@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="py-10">
+    <section id="home" className="py-10">
       <div className="flex gap-5 items-center">
         <div className="h-20 w-20 rounded-full overflow-hidden">
           <Image
@@ -38,6 +38,6 @@ export default function Hero() {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
