@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Hero() {
@@ -11,6 +12,7 @@ export default function Hero() {
             width={400}
             height={400}
             quality={100}
+            priority
             alt="Esther"
           />
         </div>
@@ -31,11 +33,14 @@ export default function Hero() {
         </p>
         <div className="flex gap-5">
           <button className="py-3 px-6 bg-slate-950 text-slate-50 rounded-xl">
-            View resume
+            Download CV
           </button>
-          <button className="py-3 px-6 text-slate-950 rounded-xl">
+          <Link
+            href="#projects"
+            className="py-3 px-6 text-slate-950 rounded-xl"
+          >
             My projects
-          </button>
+          </Link>
         </div>
       </div>
     </section>
