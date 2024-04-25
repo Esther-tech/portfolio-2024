@@ -32,12 +32,16 @@ export default function Hero() {
           aliquip ex ea commodo consequat.
         </p>
         <div className="flex gap-5">
-          <button className="py-3 px-6 bg-slate-950 text-slate-50 rounded-xl">
+          <a
+            href="/CV.pdf"
+            className="py-3 px-6 bg-slate-950 text-slate-50 rounded-xl hover:scale-110 focus:scale-110 transition"
+            download
+          >
             Download CV
-          </button>
+          </a>
           <Link
             href="#projects"
-            className="py-3 px-6 text-slate-950 rounded-xl"
+            className="py-3 px-6 text-slate-950 rounded-xl hover:scale-110 focus:scale-110 transition"
           >
             My projects
           </Link>
