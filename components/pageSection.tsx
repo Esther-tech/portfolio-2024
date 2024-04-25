@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactElement } from "react";
 
 export default function PageSection({
   id,
@@ -7,11 +7,11 @@ export default function PageSection({
 }: {
   id: string;
   title?: string;
-  children: ReactNode;
+  children: ReactElement;
 }) {
   return (
     <section id={id} className="py-10 px-5 max-w-screen-md m-auto">
-      {title && <h2>{title}</h2>}
+      {title && <h2 className="capitalize mb-5 text-lg font-bold">{title}</h2>}
       {children}
     </section>
   );

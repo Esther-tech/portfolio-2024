@@ -8,4 +8,8 @@
     color:  rgb(51 65 85);
     line-height: 1.6;
   }
+
+  & span {
+    font-family: Noto_Serif_JP, serif;
+  }
 }
