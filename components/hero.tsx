@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import PageSection from "./pageSection";
 
 export default function Hero() {
   return (
-    <section id="home" className="py-10">
+    <PageSection id="home">
       <div className="flex gap-5 items-center">
         <div className="h-20 w-20 rounded-full overflow-hidden">
           <Image
@@ -47,6 +48,6 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-    </section>
+    </PageSection>
   );
 }

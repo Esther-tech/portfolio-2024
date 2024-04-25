@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-slate-50 text-slate-950`}>
         <Container>
           <Header />
-          <div className="pt-14">{children}</div>
+          <div>{children}</div>
           <Footer />
         </Container>
       </body>

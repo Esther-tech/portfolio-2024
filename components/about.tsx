@@ -1,9 +1,9 @@
 import React from "react";
+import PageSection from "./pageSection";
 
 export default function About() {
   return (
-    <section id="about" className="py-10">
-      <h2>About me</h2>
+    <PageSection id="about" title="About me">
       <p>
         At vero eos et accusamus et iusto odio dignissimos ducimus qui
         blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
@@ -14,6 +14,6 @@ export default function About() {
         cumque nihil impedit quo minus id quod maxime placeat facere possimus,
         omnis voluptas assumenda est, omnis dolor repellendus.
       </p>
-    </section>
+    </PageSection>
   );
 }
