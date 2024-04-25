@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function Footer() {
-  return <div className="absolute bottom-0 py-6 w-full">foot</div>;
+  return (
+    <footer className="max-w-screen-md m-auto absolute bottom-0 left-1/2 py-6 px-5 bg-slate-50 ">
+      <div className="flex">foot</div>
+    </footer>
+  );
 }

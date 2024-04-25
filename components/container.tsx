@@ -5,9 +5,5 @@ export default function Container({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <div className="max-w-screen-md px-5 m-auto pb-28 min-h-screen relative">
-      {children}
-    </div>
-  );
+  return <div className="pb-5 md:pb-24 min-h-screen relative">{children}</div>;
 }

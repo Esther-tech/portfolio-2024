@@ -10,7 +10,7 @@ export default function PageSection({
   children: ReactNode;
 }) {
   return (
-    <section id={id} className="py-10 max-w-screen-md m-auto">
+    <section id={id} className="py-10 px-5 max-w-screen-md m-auto">
       {title && <h2>{title}</h2>}
       {children}
     </section>

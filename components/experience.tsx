@@ -3,7 +3,7 @@ import PageSection from "./pageSection";
 
 export default function Experience() {
   return (
-    <div>
+    <div className="bg-[url('/images/details.jpg')] bg-no-repeat bg-cover">
       <PageSection id="experience" title="Experience">
         <p>
           At vero eos et accusamus et iusto odio dignissimos ducimus qui
