@@ -16,6 +16,33 @@ export const navItems = [
   },
 ] as const;
 
+export const experienceData = [
+  {
+    title: 'Title1',
+    year: '2020-2021',
+    company: 'Company',
+    tags:  ['B2B', 'SaaS'],
+  },
+  {
+    title: 'Title2',
+    year: '2020-2021',
+    company: 'Company',
+    tags:  ['B2B', 'SaaS'],
+  },
+  {
+    title: 'Title3',
+    year: '2020-2021',
+    company: 'Company',
+    tags:  ['B2B', 'SaaS'],
+  },
+  {
+    title: 'Title4',
+    year: '2020-2021',
+    company: 'Company',
+    tags:  ['B2B', 'SaaS'],
+  }
+] as const;
+
 export const projectData = [
   {
     id: 1,
