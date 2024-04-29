@@ -1,4 +1,7 @@
-import projectImage from '@/public/images/details.jpg'
+import projectImage from '@/public/images/details.jpg';
+import zenhq from '@/public/images/zenhq-icon.png';
+import accelerator from '@/public/svg/accelerator-icon.svg';
+import shortstay from '@/public/images/shortstay-icon.png';
 
 export const navItems = [
   {
@@ -21,25 +24,29 @@ export const experienceData = [
     title: 'Frontend developer',
     year: '2022-Present',
     company: 'AcceleratorApp',
+    companyIcon: accelerator,
     tags:  ['B2B', 'SaaS'],
   },
   {
     title: 'Frontend developer',
     year: '2021-2022',
     company: 'zenHQ',
-    tags:  ['B2B', 'SaaS'],
+    companyIcon: zenhq,
+    tags:  ['B2B', 'SaaS', 'E-commerce'],
   },
   {
     title: 'Project manager',
     year: '2020',
     company: 'zenHQ',
-    tags:  ['B2B', 'SaaS'],
+    companyIcon: zenhq,
+    tags:  ['B2B', 'SaaS', 'E-commerce'],
   },
   {
     title: 'Revenue coordinator',
     year: '2017-2018',
-    company: 'Short Stay Group',
-    tags:  ['Real Estate', 'Analytical'],
+    company: 'Short Stay',
+    companyIcon: shortstay,
+    tags:  ['Real Estate', 'Optimization'],
   }
 ] as const;
 

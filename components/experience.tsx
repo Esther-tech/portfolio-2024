@@ -6,6 +6,8 @@ import { experienceData } from "@/lib/data";
 import Image from "next/image";
 import arrow from "@/public/svg/arrow.svg";
 import divider from "@/public/svg/experience-vertical-divider.svg";
+import indicator from "@/public/svg/experience-indicator.svg";
+import { Tag } from "./tag";
 
 export default function Experience() {
   return (
@@ -13,7 +15,7 @@ export default function Experience() {
       <PageSection id="experience">
         <div className="relative">
           {experienceData.map((experience, i) => {
-            const { title, company, year, tags } = experience;
+            const { title, company, companyIcon, year, tags } = experience;
             const reverse = !(i % 2);
             return (
               <div
@@ -24,22 +26,39 @@ export default function Experience() {
               >
                 <div className="w-2/5">
                   <h3 className="text-xl capitalize mb-2">{title}</h3>
-                  <div>{company}</div>
+                  <div className="flex gap-2 flex-wrap">
+                    <Image
+                      src={companyIcon}
+                      width="200"
+                      height="200"
+                      alt="company icon"
+                      quality={95}
+                      className="inline-flex rounded-md w-6 h-6"
+                    />
+                    {company}
+                    {tags.map((tag, i) => {
+                      return <Tag key={i} tag={tag} />;
+                    })}
+                  </div>
                 </div>
-                <div className="mt-2">dot</div>
+                <Image
+                  src={indicator}
+                  width="18"
+                  height="18"
+                  alt="indicator"
+                  className="z-10 ml-[1px] relative self-start mt-2"
+                />
                 <div className={`w-2/5 ${reverse && "text-right"}`}>
                   <div className="inline-block py-2 px-3 mb-2 text-sm bg-slate-50 rounded-md relative">
-                    <div>
-                      <Image
-                        src={arrow}
-                        width="8"
-                        height="8"
-                        alt="arrow"
-                        className={`absolute top-[30%] ${
-                          reverse ? "right-[-7px] rotate-180" : "left-[-7px]"
-                        }`}
-                      />
-                    </div>
+                    <Image
+                      src={arrow}
+                      width="8"
+                      height="8"
+                      alt="arrow"
+                      className={`absolute top-[30%] ${
+                        reverse ? "right-[-7px] rotate-180" : "left-[-7px]"
+                      }`}
+                    />
                     <div>{year}</div>
                   </div>
                   <Image
