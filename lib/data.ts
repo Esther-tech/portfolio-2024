@@ -18,28 +18,28 @@ export const navItems = [
 
 export const experienceData = [
   {
-    title: 'Title1',
-    year: '2020-2021',
-    company: 'Company',
+    title: 'Frontend developer',
+    year: '2022-Present',
+    company: 'AcceleratorApp',
     tags:  ['B2B', 'SaaS'],
   },
   {
-    title: 'Title2',
-    year: '2020-2021',
-    company: 'Company',
+    title: 'Frontend developer',
+    year: '2021-2022',
+    company: 'zenHQ',
     tags:  ['B2B', 'SaaS'],
   },
   {
-    title: 'Title3',
-    year: '2020-2021',
-    company: 'Company',
+    title: 'Project manager',
+    year: '2020',
+    company: 'zenHQ',
     tags:  ['B2B', 'SaaS'],
   },
   {
-    title: 'Title4',
-    year: '2020-2021',
-    company: 'Company',
-    tags:  ['B2B', 'SaaS'],
+    title: 'Revenue coordinator',
+    year: '2017-2018',
+    company: 'Short Stay Group',
+    tags:  ['Real Estate', 'Analytical'],
   }
 ] as const;
 
