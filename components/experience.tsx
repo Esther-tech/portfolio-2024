@@ -76,7 +76,7 @@ export default function Experience() {
             height="400"
             width="1"
             alt="vertical divider"
-            className="absolute top-[-2.5rem] left-1/2 h-[120%]"
+            className="absolute top-[-2.5rem] left-1/2 h-[110%]"
           />
         </div>
       </PageSection>
