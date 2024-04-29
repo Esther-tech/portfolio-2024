@@ -57,8 +57,8 @@ export default function Experience() {
                       width="8"
                       height="8"
                       alt="arrow"
-                      className={`absolute top-[30%] right-[-7px] rotate-180 ${
-                        !reverse && "sm:left-[-7px] sm:rotate-0"
+                      className={`absolute top-[30%] -right-[7px] rotate-180 ${
+                        !reverse && "sm:-left-[7px] sm:rotate-0"
                       }`}
                     />
                     <div>{year}</div>
@@ -78,7 +78,7 @@ export default function Experience() {
             height="400"
             width="1"
             alt="vertical divider"
-            className="absolute top-[-2.5rem] left-1/4 sm:left-1/2 h-[110%]"
+            className="absolute -top-[2.5rem] left-1/4 sm:left-1/2 h-[110%]"
           />
         </div>
       </PageSection>
