@@ -7,7 +7,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 export default function Header() {
   const [navOpen, setNavOpen] = useState<boolean>(false);
   return (
-    <header className="fixed left-0 right-0 top-0 bg-slate-50 bg-opacity-80 backdrop-blur-[0.4rem]">
+    <header className="fixed left-0 right-0 top-0 bg-slate-50 bg-opacity-80 backdrop-blur-[0.4rem] z-50">
       <div className="max-w-screen-md m-auto py-3 px-5">
         <div className="flex justify-between ">
           <Link href="/">

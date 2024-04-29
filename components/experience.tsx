@@ -20,11 +20,11 @@ export default function Experience() {
             return (
               <div
                 key={i}
-                className={`flex my-12 justify-between ${
-                  reverse && "flex-row-reverse"
+                className={`flex my-12 justify-between flex-row-reverse sm:flex-row ${
+                  reverse && "sm:flex-row-reverse"
                 }`}
               >
-                <div className="w-2/5">
+                <div className="w-8/12 sm:w-2/5">
                   <h3 className="text-xl capitalize mb-2">{title}</h3>
                   <div className="flex gap-2 flex-wrap">
                     <Image
@@ -48,15 +48,17 @@ export default function Experience() {
                   alt="indicator"
                   className="z-10 ml-[1px] relative self-start mt-2"
                 />
-                <div className={`w-2/5 ${reverse && "text-right"}`}>
-                  <div className="inline-block py-2 px-3 mb-2 text-sm bg-slate-50 rounded-md relative">
+                <div
+                  className={`w-2/12 sm:w-2/5 ${reverse && "sm:text-right"}`}
+                >
+                  <div className="inline-block py-2 px-3 mb-2 text-xs sm:text-sm bg-slate-50 rounded-md relative">
                     <Image
                       src={arrow}
                       width="8"
                       height="8"
                       alt="arrow"
-                      className={`absolute top-[30%] ${
-                        reverse ? "right-[-7px] rotate-180" : "left-[-7px]"
+                      className={`absolute top-[30%] right-[-7px] rotate-180 ${
+                        !reverse && "sm:left-[-7px] sm:rotate-0"
                       }`}
                     />
                     <div>{year}</div>
@@ -76,7 +78,7 @@ export default function Experience() {
             height="400"
             width="1"
             alt="vertical divider"
-            className="absolute top-[-2.5rem] left-1/2 h-[110%]"
+            className="absolute top-[-2.5rem] left-1/4 sm:left-1/2 h-[110%]"
           />
         </div>
       </PageSection>
