@@ -1,11 +1,12 @@
 import React from "react";
 import PageSection from "./pageSection";
+import { sendEmail } from "@/actions/sendEmail";
 
 export default function Contact() {
   return (
     <PageSection id="contact" title="Contact">
       <div className="max-w-xl m-auto">
-        <form className="flex flex-col gap-4 items-center">
+        <form className="flex flex-col gap-4 items-center" action={sendEmail}>
           <input
             type="email"
             name="sender"
