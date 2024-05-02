@@ -16,11 +16,11 @@ export const sendEmail = async (formData: FormData) => {
   }
 
   const { data, error } = await resend.emails.send({
-    from: "Portfolio contact <onboarding@resend.dev>",
+    from: `Resend from ${sender} <onboarding@resend.dev>`,
     to: "esthersiebert94@gmail.com",
     reply_to: sender as string,
-    subject: "Contact form",
-    html: `<div><h1>A new message from the portfolio contact form</h1><p>Message: ${message}</p><p>Sender email: ${sender}</p></div>`,
+    subject: "Portfolio website contact form",
+    html: `<div><h1>A new message from your portfolio contact form</h1><p>Message: ${message}</p><p>Sender email: ${sender}</p></div>`,
   });
 
   return { data, error: error && error.message };
