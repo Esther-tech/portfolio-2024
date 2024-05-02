@@ -36,14 +36,14 @@ export default function Hero() {
           <div className="flex gap-5">
             <a
               href="/CV.pdf"
-              className="py-3 px-6 bg-slate-950 text-slate-50 rounded-xl hover:scale-110 focus:scale-110 transition"
+              className="py-3 px-6 bg-slate-950 text-slate-50 rounded-xl hover:scale-105 focus:scale-105 transition"
               download
             >
               Download CV
             </a>
             <Link
               href="#projects"
-              className="py-3 px-6 text-slate-950 rounded-xl hover:scale-110 focus:scale-110 transition"
+              className="py-3 px-6 text-slate-950 rounded-xl hover:scale-105 focus:scale-105 transition"
             >
               My projects
             </Link>

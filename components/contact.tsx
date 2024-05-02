@@ -1,12 +1,27 @@
+"use client";
 import React from "react";
 import PageSection from "./pageSection";
-import { sendEmail } from "@/actions/sendEmail";
+import { sendEmail } from "@/lib/actions/sendEmail";
+import FormButton from "./formButton";
 
 export default function Contact() {
   return (
     <PageSection id="contact" title="Contact">
       <div className="max-w-xl m-auto">
-        <form className="flex flex-col gap-4 items-center" action={sendEmail}>
+        <form
+          className="flex flex-col gap-4 items-center"
+          action={async (formData: FormData) => {
+            console.log("yes");
+            const { data, error } = await sendEmail(formData);
+
+            if (error) {
+              alert(error);
+              return;
+            }
+
+            alert("Email sent successfully");
+          }}
+        >
           <input
             type="email"
             name="sender"
@@ -21,12 +36,7 @@ export default function Contact() {
             placeholder="Your message"
             className="border border-slate-200 rounded-md w-full p-4 h-52"
           />
-          <button
-            type="submit"
-            className="py-3 px-6 bg-slate-950 text-slate-50 rounded-xl hover:scale-110 focus:scale-110 transition"
-          >
-            Send
-          </button>
+          <FormButton />
         </form>
       </div>
     </PageSection>
