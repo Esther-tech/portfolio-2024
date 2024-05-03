@@ -72,6 +72,14 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
               </p>
             ))}
           </div>
+          <div>
+            <h3 className="mb-4 capitalize">Conclusion</h3>
+            {caseStudy.conclusion.map((section, i) => (
+              <p key={i} className="mb-4">
+                {section}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
     </PageSection>

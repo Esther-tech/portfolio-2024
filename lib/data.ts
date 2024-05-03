@@ -94,6 +94,8 @@ export const projectData = [
         "Utilizing React.js and TypeScript, I leveraged Formik and Yup validation for streamlined creation and editing of roles. Custom hooks were implemented to minimize GraphQL query calls, optimizing performance by utilizing cached values stored in React context. The frontend architecture facilitated dynamic rendering of permissions based on user roles, ensuring seamless user interactions and minimal network requests.",
         "Close collaboration with the backend developer ensured smooth integration of frontend components with GraphQL APIs. Rigorous testing procedures were implemented to validate the system across diverse user scenarios, identifying and addressing potential edge cases proactively.",
         "The successful integration of role and permission management features empowered admin users with enhanced control over user access within the application. Post-implementation feedback highlighted significant improvements in usability and efficiency, affirming the success of our collaborative endeavor.",
+      ],
+      conclusion: [
         "In conclusion, the collaborative efforts of the frontend developer, designer, and backend developer resulted in the seamless integration of role and permission management features, enhancing the security and usability of the application. This case study underscores the importance of cross-functional collaboration in delivering robust solutions that align with user needs and industry best practices. The utilization of React.js, TypeScript, and GraphQL technologies facilitated efficient development and implementation of the feature, showcasing the power of modern frontend development techniques in solving complex challenges.",
       ],
     },
@@ -116,13 +118,8 @@ export const projectData = [
       intro: [
         "This case study delves into the collaborative effort between a frontend developer, a designer, and a backend developer to integrate role and permission management features into a large-scale application.",
       ],
-      body: [
-        "Our team of three, consisting of a UI/UX designer, a Backend developer, and me, a Frontend Developer, was tasked with enhancing the existing user management system to incorporate granular control over user roles and permissions.",
-        "The collaboration commenced with brainstorming sessions to outline the scope and requirements of the feature. The designer conceptualized user interfaces, while the backend developer began architecting necessary APIs and database schemas.",
-        "I translated design mockups into functional components, ensuring dynamic rendering of permissions based on selected roles. Iterative development cycles refined the interface and optimized user interactions.",
-        "Close collaboration with the backend developer ensured seamless integration of frontend components with GraphQL queries and mutations. Rigorous testing validated the system across diverse user scenarios.",
-        "The integration empowered administrators with control over user access. User feedback post-implementation indicated significant improvement in usability and efficiency.",
-      ],
+      body: ["body"],
+      conclusion: ["conclusion"],
     },
   },
   {
@@ -147,6 +144,8 @@ export const projectData = [
         "Another crucial aspect of the customization was integrating third-party applications and APIs to extend the functionality of the webshop. Whether it was integrating a custom payment gateway, implementing a live chat feature, or syncing inventory with an external ERP system, I utilized Liquid's flexibility to seamlessly integrate external services while maintaining the integrity of the Shopify platform.",
         "Accessibility and performance optimization were prioritized throughout the customization process. Leveraging Liquid's conditional rendering capabilities, I implemented responsive design principles to ensure optimal user experiences across devices of varying screen sizes. Additionally, I optimized page load times by minimizing unnecessary Liquid code and leveraging browser caching techniques.",
         "The final phase of the customization involved rigorous testing and quality assurance. I conducted thorough cross-browser and cross-device testing to ensure compatibility and consistency across different environments. Additionally, I collaborated closely with the client to gather feedback and make any necessary adjustments to meet their expectations.",
+      ],
+      conclusion: [
         "In conclusion, the comprehensive customization of the Shopify webshop exemplifies the power and versatility of the Liquid programming language and vanilla JavaScript. By leveraging these technologies, I was able to transform a standard Shopify store into a highly tailored and engaging online shopping experience, perfectly aligned with the client's vision and branding. This case study underscores the importance of expertise and creativity in leveraging platform capabilities to achieve unique and impactful solutions in e-commerce development.",
       ],
     },
