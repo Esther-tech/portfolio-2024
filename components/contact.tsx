@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, createRef } from "react";
 import PageSection from "./pageSection";
 import { sendEmail } from "@/actions/sendEmail";
 import FormButton from "./formButton";
@@ -11,7 +11,7 @@ export default function Contact() {
     type: "success" | "error" | null;
   }>({ message: null, type: null });
 
-  console.log(toast.type);
+  const formRef = createRef<HTMLFormElement>();
 
   return (
     <PageSection id="contact" title="Contact">
@@ -25,6 +25,7 @@ export default function Contact() {
         )}
 
         <form
+          ref={formRef}
           className="flex flex-col gap-4 items-center"
           action={async (formData: FormData) => {
             const { data, error } = await sendEmail(formData);
@@ -36,6 +37,8 @@ export default function Contact() {
               });
               return;
             }
+
+            formRef.current?.reset();
 
             return setToast({
               message: "Email sent successfully",
