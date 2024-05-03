@@ -5,7 +5,7 @@
 :root {
   & p {
     font-family: Noto_Serif_JP, serif;
-    color:  rgb(51 65 85);
+    color: rgb(51 65 85);
     line-height: 1.6;
   }
 

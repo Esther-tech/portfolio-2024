@@ -45,7 +45,7 @@ function ProjectItem({ id, title, company, year, tags, imageUrl }: ItemProps) {
         <Link href={`/projects/${id}`}>
           <h3 className="text-2xl text-center md:text-left">{title}</h3>
         </Link>
-        <div className="flex gap-3 py-2 flex-wrap justify-center">
+        <div className="flex gap-3 py-2 flex-wrap">
           {tags.map((tag, i) => (
             <Tag key={i} tag={tag} />
           ))}
