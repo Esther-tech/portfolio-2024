@@ -5,7 +5,7 @@ export default function PageSection({
   title,
   children,
 }: {
-  id: string;
+  id?: string;
   title?: string;
   children: ReactElement;
 }) {
