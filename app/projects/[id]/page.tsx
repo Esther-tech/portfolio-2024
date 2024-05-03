@@ -21,10 +21,9 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
   return (
     <PageSection>
       <div className="py-10 flex flex-col gap-7">
-        <div className="flex items-center gap-2">
-          <ArrowLeftIcon className="h-4 w-4" />
-          <Link href="/#projects">Back to projects</Link>
-        </div>
+        <Link href="/#projects" className="flex items-center gap-2">
+          <ArrowLeftIcon className="h-4 w-4" /> Back to projects
+        </Link>
 
         <div className="flex flex-col gap-7">
           <h1 className="text-4xl">{title}</h1>
@@ -46,19 +45,19 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           <Image src={imageUrl} alt={title} width={800} height={800} />
         </div>
 
-        <div>
-          <h3 className="text-lg font-bold capitalize mb-4">Company info</h3>
+        <div className="flex flex-col gap-3">
+          <h3 className="text-lg font-bold capitalize">Company info</h3>
           {company.info.map((section, i) => (
-            <p key={i} className="mb-4">
-              {section}
-            </p>
+            <p key={i}>{section}</p>
           ))}
         </div>
 
-        <div>
-          <h2 className="text-2xl capitalize mb-4">The project</h2>
-          <div className="mb-4">
-            <h3 className="mb-4 capitalize">Introduction</h3>
+        <Image src={horizontalDivider} alt="divider" />
+
+        <div className="flex flex-col gap-3">
+          <h2 className="text-2xl capitalize">The project</h2>
+          <div>
+            <h3 className="capitalize mb-3">Introduction</h3>
             {caseStudy.intro.map((section, i) => (
               <p key={i} className="mb-4">
                 {section}
