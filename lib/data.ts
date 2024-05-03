@@ -127,24 +127,9 @@ export const projectData = [
   },
   {
     id: 3,
-    timeline: "2023",
-    title: "ZenPay???",
-    tags: ["React", "Javascript", "Redux"],
-    imageUrl: projectImage,
-    company: {
-      name: "zenHQ",
-      icon: zenhq,
-      info: ["zenhq"],
-    },
-    caseStudy: {
-      intro: ["Intro"],
-      body: ["Body"],
-    },
-  },
-  {
-    id: 4,
     timeline: "2023 Q3",
-    title: "Another interesting project; customizing a Shopify website",
+    title:
+      "Customizing a shopify webshop: a case study in liquid and JavaScript",
     tags: ["React", "JavaScript", "Liquid", "Shopify"],
     imageUrl: projectImage,
     company: {
@@ -153,8 +138,17 @@ export const projectData = [
       info: ["Adday"],
     },
     caseStudy: {
-      intro: ["Intro"],
-      body: ["Body"],
+      intro: [
+        "This case study delves into the comprehensive customization of a Shopify webshop, achieved through the adept utilization of the Liquid programming language and vanilla JavaScript. The project aimed to transform a standard Shopify store into a unique and tailored online shopping experience, catering to the specific needs and branding of the client.",
+      ],
+      body: [
+        "The customization process commenced with a thorough analysis of the client's requirements and design preferences. Leveraging the flexibility of Shopify's Liquid templating language, I meticulously crafted custom templates and sections to achieve the desired layout and functionality. This involved creating unique page templates for the homepage, product pages, collection pages, and checkout process, ensuring consistency and coherence throughout the webshop.",
+        "One of the key challenges was implementing dynamic product filtering and sorting functionalities. Utilizing Liquid's powerful logic and iteration capabilities, I developed custom filters based on product attributes such as category, price range, and availability. Vanilla JavaScript was employed to enhance user interactions, enabling seamless filtering and sorting of products without requiring page reloads.",
+        "Another crucial aspect of the customization was integrating third-party applications and APIs to extend the functionality of the webshop. Whether it was integrating a custom payment gateway, implementing a live chat feature, or syncing inventory with an external ERP system, I utilized Liquid's flexibility to seamlessly integrate external services while maintaining the integrity of the Shopify platform.",
+        "Accessibility and performance optimization were prioritized throughout the customization process. Leveraging Liquid's conditional rendering capabilities, I implemented responsive design principles to ensure optimal user experiences across devices of varying screen sizes. Additionally, I optimized page load times by minimizing unnecessary Liquid code and leveraging browser caching techniques.",
+        "The final phase of the customization involved rigorous testing and quality assurance. I conducted thorough cross-browser and cross-device testing to ensure compatibility and consistency across different environments. Additionally, I collaborated closely with the client to gather feedback and make any necessary adjustments to meet their expectations.",
+        "In conclusion, the comprehensive customization of the Shopify webshop exemplifies the power and versatility of the Liquid programming language and vanilla JavaScript. By leveraging these technologies, I was able to transform a standard Shopify store into a highly tailored and engaging online shopping experience, perfectly aligned with the client's vision and branding. This case study underscores the importance of expertise and creativity in leveraging platform capabilities to achieve unique and impactful solutions in e-commerce development.",
+      ],
     },
   },
 ] as const;
