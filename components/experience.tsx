@@ -11,7 +11,7 @@ import { Tag } from "./tag";
 
 export default function Experience() {
   return (
-    <div className="bg-[url('/images/experience-background.png')] bg-slate-100 bg-no-repeat bg-cover">
+    <div className="bg-[url('/images/experience-background.png')] bg-slate-50 bg-no-repeat bg-cover">
       <PageSection id="experience">
         <div className="relative">
           {experienceData.map((experience, i) => {
@@ -51,7 +51,7 @@ export default function Experience() {
                 <div
                   className={`w-2/12 sm:w-2/5 ${reverse && "sm:text-right"}`}
                 >
-                  <div className="inline-block py-2 px-3 mb-2 text-xs sm:text-sm bg-slate-50 rounded-md relative">
+                  <div className="inline-block py-2 px-3 mb-2 text-xs sm:text-sm bg-white rounded-md relative">
                     <Image
                       src={arrow}
                       width="8"

@@ -8,11 +8,11 @@ export default function FormButton() {
   return (
     <button
       type="submit"
-      className="flex justify-center items-center h-10 w-20 bg-slate-950 text-slate-50 text-sm rounded-xl hover:scale-105 transition disabled:bg-slate-900"
+      className="flex justify-center items-center h-10 w-20 bg-slate-950 text-white text-sm rounded-xl hover:scale-105 transition disabled:bg-slate-900"
       disabled={pending}
     >
       {pending ? (
-        <div className="h-4 w-4 animate-spin rounded-full border-b-2 border-slate-50" />
+        <div className="h-4 w-4 animate-spin rounded-full border-b-2 border-white" />
       ) : (
         <>Send</>
       )}
