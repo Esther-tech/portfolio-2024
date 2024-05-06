@@ -44,12 +44,12 @@ function ProjectItem({
           />
         </Link>
       </div>
-      <div className="md:w-1/2 flex flex-col gap-2 items-center md:items-start">
+      <div className="md:w-1/2 flex flex-col gap-2">
         <h6 className="text-sm text-slate-700">
           {company.name} &middot; {timeline}
         </h6>
         <Link href={`/projects/${id}`}>
-          <h3 className="text-2xl text-center md:text-left">{title}</h3>
+          <h3 className="text-2xl">{title}</h3>
         </Link>
         <div className="flex gap-3 py-2 flex-wrap">
           {tags.map((tag, i) => (

@@ -39,7 +39,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           </div>
         </div>
 
-        <Image src={horizontalDivider} alt="divider" />
+        <Image src={horizontalDivider} alt="divider" className="-ml-[7px]" />
 
         <div className="overflow-hidden max-h-96 w-4/5 m-auto">
           <Image src={imageUrl} alt={title} width={800} height={800} />
@@ -52,7 +52,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           ))}
         </div>
 
-        <Image src={horizontalDivider} alt="divider" />
+        <Image src={horizontalDivider} alt="divider" className="-ml-[7px]" />
 
         <div className="flex flex-col gap-3">
           <h2 className="text-2xl capitalize">The project</h2>

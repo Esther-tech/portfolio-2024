@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Hanken_Grotesk } from "next/font/google";
+import { Archivo } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Container from "@/components/container";
 
-const inter = Hanken_Grotesk({ subsets: ["latin"] });
+const inter = Archivo({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Esther | Personal portfolio",
   description:
-    "Esther Siebert is a frontend developer, specialized in React.js",
+    "Esther Siebert is a frontend developer, specialized in React.js and TypeScript",
 };
 
 export default function RootLayout({
