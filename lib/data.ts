@@ -2,7 +2,10 @@ import projectImage from "@/public/images/details.jpg";
 import zenhq from "@/public/images/zenhq-icon.png";
 import accelerator from "@/public/svg/accelerator-icon.svg";
 import shortstay from "@/public/images/shortstay-icon.png";
-import rolesProject from "@/public/images/roles-project.png";
+import adday from "@/public/images/adday-logo.webp";
+import rolesProject from "@/public/images/role-project.jpg";
+import availabilityProject from "@/public/images/availability-project.png";
+import addayProject from "@/public/images/adday-project2.png";
 
 export const navItems = [
   {
@@ -74,14 +77,13 @@ export const projectData = [
     id: 1,
     timeline: "2023 Q1-Q3",
     title: "Enhancing user roles and permissions management",
-    tags: ["React", "Typescript", "GraphQL", "Formik", "yup"],
+    tags: ["React", "Typescript", "GraphQL", "PostCSS", "Formik", "Yup", "Git"],
     imageUrl: rolesProject,
     company: {
       name: "AcceleratorApp",
       icon: accelerator,
       info: [
         "AcceleratorApp revolutionizes the incubator and accelerator landscape by offering comprehensive software solutions tailored to the unique needs of these organizations. By automating, organizing, and tracking various facets of incubation and acceleration processes, the platform empowers these entities to focus on their core mission without being bogged down by administrative tasks. From application management to milestone planning, coaching tracking to community management, AcceleratorApp software streamlines operations while enhancing the value each member receives from the experience.",
-        "With customizable modules, AcceleratorApp adapts to the specific processes and requirements of each incubator or accelerator, fostering efficiency and transparency throughout the startup journey. We believe in fostering global connections while supporting local economies, driven by a dedication to meritocracy and transparency in the startup ecosystem.",
       ],
     },
     caseStudy: {
@@ -104,14 +106,13 @@ export const projectData = [
     id: 2,
     timeline: "2023 Q4",
     title: "Multi-user calendar management and adding availability",
-    tags: ["React", "Typescript"],
-    imageUrl: projectImage,
+    tags: ["React", "Typescript", "PostCss", "Git"],
+    imageUrl: availabilityProject,
     company: {
       name: "AcceleratorApp",
       icon: accelerator,
       info: [
         "AcceleratorApp revolutionizes the incubator and accelerator landscape by offering comprehensive software solutions tailored to the unique needs of these organizations. By automating, organizing, and tracking various facets of incubation and acceleration processes, the platform empowers these entities to focus on their core mission without being bogged down by administrative tasks. From application management to milestone planning, coaching tracking to community management, AcceleratorApp software streamlines operations while enhancing the value each member receives from the experience.",
-        "With customizable modules, AcceleratorApp adapts to the specific processes and requirements of each incubator or accelerator, fostering efficiency and transparency throughout the startup journey. We believe in fostering global connections while supporting local economies, driven by a dedication to meritocracy and transparency in the startup ecosystem.",
       ],
     },
     caseStudy: {
@@ -126,22 +127,24 @@ export const projectData = [
     id: 3,
     timeline: "2023 Q3",
     title:
-      "Customizing a shopify webshop: a case study in liquid and JavaScript",
-    tags: ["React", "JavaScript", "Liquid", "Shopify"],
-    imageUrl: projectImage,
+      "Customizing a shopify webshop: a case study in Liquid and JavaScript",
+    tags: ["JavaScript", "Liquid", "Shopify", "Git", "CSS"],
+    imageUrl: addayProject,
     company: {
-      name: "Adday",
-      icon: shortstay,
-      info: ["Adday"],
+      name: "Adday Wellness",
+      icon: adday,
+      info: [
+        "Adday is dedicated to promoting holistic health through functional foods that nurture the body and mind. Their range of nutrition supplements is meticulously crafted with probiotics, prebiotics, and natural ingredients to support healthy digestion, gut health, and overall wellness. With a focus on plant-based, clean eating, we aim to empower individuals on their journey towards a healthier lifestyle. From immune support to weight balance and mind focus, our products are designed to help you achieve your wellness goals. At Adday, we believe in the transformative power of small habits and are committed to supporting your holistic well-being, one step at a time.",
+      ],
     },
     caseStudy: {
       intro: [
         "This case study delves into the comprehensive customization of a Shopify webshop, achieved through the adept utilization of the Liquid programming language and vanilla JavaScript. The project aimed to transform a standard Shopify store into a unique and tailored online shopping experience, catering to the specific needs and branding of the client.",
       ],
       body: [
-        "The customization process commenced with a thorough analysis of the client's requirements and design preferences. Leveraging the flexibility of Shopify's Liquid templating language, I meticulously crafted custom templates and sections to achieve the desired layout and functionality. This involved creating unique page templates for the homepage, product pages, collection pages, and checkout process, ensuring consistency and coherence throughout the webshop.",
+        "The customization process commenced with a thorough analysis of the client's requirements and design preferences. Leveraging the flexibility of Shopify's Liquid templating language, I meticulously crafted custom templates and sections to achieve the desired layout and functionality. This involved creating unique page templates for the homepage, product pages, and collection pages, ensuring consistency and coherence throughout the webshop.",
         "One of the key challenges was implementing dynamic product filtering and sorting functionalities. Utilizing Liquid's powerful logic and iteration capabilities, I developed custom filters based on product attributes such as category, price range, and availability. Vanilla JavaScript was employed to enhance user interactions, enabling seamless filtering and sorting of products without requiring page reloads.",
-        "Another crucial aspect of the customization was integrating third-party applications and APIs to extend the functionality of the webshop. Whether it was integrating a custom payment gateway, implementing a live chat feature, or syncing inventory with an external ERP system, I utilized Liquid's flexibility to seamlessly integrate external services while maintaining the integrity of the Shopify platform.",
+        "Another crucial aspect of the customization was adding subscription options to the product pages utilizing the variant variable already present in Shopify. By leveraging the existing variant settings, which were repurposed as subscription options, we empowered the client to easily adjust these settings through the Shopify admin panel. This approach not only streamlined the process of adding subscriptions but also provided flexibility for the client to tailor subscription offerings to meet evolving customer preferences. With the integration of subscription options directly into the product pages, customers can now conveniently subscribe to their favorite products with just a few clicks, enhancing user experience and driving recurring revenue for the client.",
         "Accessibility and performance optimization were prioritized throughout the customization process. Leveraging Liquid's conditional rendering capabilities, I implemented responsive design principles to ensure optimal user experiences across devices of varying screen sizes. Additionally, I optimized page load times by minimizing unnecessary Liquid code and leveraging browser caching techniques.",
         "The final phase of the customization involved rigorous testing and quality assurance. I conducted thorough cross-browser and cross-device testing to ensure compatibility and consistency across different environments. Additionally, I collaborated closely with the client to gather feedback and make any necessary adjustments to meet their expectations.",
       ],

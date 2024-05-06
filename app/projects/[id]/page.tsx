@@ -6,6 +6,7 @@ import NotFound from "./notFound";
 import horizontalDivider from "@/public/svg/horizontal-divider.svg";
 import Link from "next/link";
 import { ArrowLeftIcon } from "@heroicons/react/16/solid";
+import { Tag } from "@/components/tag";
 
 export default function ProjectPage({ params }: { params: { id: string } }) {
   const project = projectData.find(
@@ -41,8 +42,8 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
 
         <Image src={horizontalDivider} alt="divider" className="-ml-[7px]" />
 
-        <div className="overflow-hidden max-h-96 w-4/5 m-auto">
-          <Image src={imageUrl} alt={title} width={800} height={800} />
+        <div className="overflow-hidden">
+          <Image src={imageUrl} alt={title} width={5000} height={5000} />
         </div>
 
         <div className="flex flex-col gap-3">
@@ -56,6 +57,11 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
 
         <div className="flex flex-col gap-3">
           <h2 className="text-2xl capitalize">The project</h2>
+          <div className="flex gap-4 my-3">
+            {tags.map((tag, i) => (
+              <Tag key={i} tag={tag} />
+            ))}
+          </div>
           <div>
             <h3 className="capitalize mb-3">Introduction</h3>
             {caseStudy.intro.map((section, i) => (

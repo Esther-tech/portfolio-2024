@@ -39,7 +39,7 @@ function ProjectItem({
           <Image
             src={imageUrl}
             alt={title}
-            height={200}
+            height={2000}
             className="w-[345px] sm:w-[500px] md:w-[400px]"
           />
         </Link>
