@@ -17,7 +17,8 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
     return <NotFound />;
   }
 
-  const { id, title, imageUrl, tags, company, timeline, caseStudy } = project;
+  const { id, title, imageUrl, tags, company, timeline, duration, caseStudy } =
+    project;
 
   return (
     <PageSection>
@@ -36,6 +37,10 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
             <div>
               <h3 className="text-lg font-bold flex">Timeline</h3>
               {timeline}
+            </div>
+            <div>
+              <h3 className="text-lg font-bold flex">Duration</h3>
+              {duration}
             </div>
           </div>
         </div>

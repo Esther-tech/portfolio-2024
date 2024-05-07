@@ -76,12 +76,14 @@ export const projectData = [
   {
     id: 1,
     timeline: "2023 Q1-Q3",
+    duration: "30 weeks",
     title: "Enhancing user roles and permissions management",
     tags: ["React", "Typescript", "GraphQL", "PostCSS", "Formik", "Yup", "Git"],
     imageUrl: rolesProject,
     company: {
       name: "AcceleratorApp",
       icon: accelerator,
+      website: "https://www.acceleratorapp.co/en/",
       info: [
         "AcceleratorApp revolutionizes the incubator and accelerator landscape by offering comprehensive software solutions tailored to the unique needs of these organizations. By automating, organizing, and tracking various facets of incubation and acceleration processes, the platform empowers these entities to focus on their core mission without being bogged down by administrative tasks. From application management to milestone planning, coaching tracking to community management, AcceleratorApp software streamlines operations while enhancing the value each member receives from the experience.",
       ],
@@ -105,12 +107,14 @@ export const projectData = [
   {
     id: 2,
     timeline: "2023 Q4",
+    duration: "10 weeks",
     title: "Multi-user calendar management and adding availability",
     tags: ["React", "Typescript", "PostCss", "Git"],
     imageUrl: availabilityProject,
     company: {
       name: "AcceleratorApp",
       icon: accelerator,
+      website: "https://www.acceleratorapp.co/en/",
       info: [
         "AcceleratorApp revolutionizes the incubator and accelerator landscape by offering comprehensive software solutions tailored to the unique needs of these organizations. By automating, organizing, and tracking various facets of incubation and acceleration processes, the platform empowers these entities to focus on their core mission without being bogged down by administrative tasks. From application management to milestone planning, coaching tracking to community management, AcceleratorApp software streamlines operations while enhancing the value each member receives from the experience.",
       ],
@@ -126,12 +130,14 @@ export const projectData = [
   {
     id: 3,
     timeline: "2023 Q3",
+    duration: "3 weeks",
     title:
       "Customizing a shopify webshop: a case study in Liquid and JavaScript",
     tags: ["JavaScript", "Liquid", "Shopify", "Git", "CSS"],
     imageUrl: addayProject,
     company: {
       name: "Adday Wellness",
+      website: "",
       icon: adday,
       info: [
         "Adday is dedicated to promoting holistic health through functional foods that nurture the body and mind. Their range of nutrition supplements is meticulously crafted with probiotics, prebiotics, and natural ingredients to support healthy digestion, gut health, and overall wellness. With a focus on plant-based, clean eating, we aim to empower individuals on their journey towards a healthier lifestyle. From immune support to weight balance and mind focus, our products are designed to help you achieve your wellness goals. At Adday, we believe in the transformative power of small habits and are committed to supporting your holistic well-being, one step at a time.",
