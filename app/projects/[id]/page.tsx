@@ -17,7 +17,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
     return <NotFound />;
   }
 
-  const { id, title, imageUrl, tags, company, timeline, duration, caseStudy } =
+  const { title, imageUrl, tags, company, timeline, duration, caseStudy } =
     project;
 
   return (
@@ -47,8 +47,10 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
 
         <Image src={horizontalDivider} alt="divider" className="-ml-[7px]" />
 
-        <div className="overflow-hidden">
-          <Image src={imageUrl} alt={title} width={5000} height={5000} />
+        <div className="bg-slate-50 rounded-xl border border-slate-200">
+          <div className="overflow-hidden w-5/6 pt-10 m-auto">
+            <Image src={imageUrl} alt={title} width={5000} height={5000} />
+          </div>
         </div>
 
         <div className="flex flex-col gap-3">
