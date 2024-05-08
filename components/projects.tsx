@@ -38,7 +38,7 @@ function ProjectItem({
   imageUrl,
 }: ItemProps) {
   return (
-    <section className="flex gap-5 flex-col md:flex-row items-center w-[345px] sm:w-[500px] md:w-auto m-auto md:m-0">
+    <section className="flex gap-5 flex-col md:flex-row items-center w-[345px] sm:w-[500px] md:w-auto m-auto md:m-0 bg-slate-50 rounded-md md:bg-inherit">
       <div className="md:w-1/2 overflow-hidden h-fit max-h-[15rem] bg-slate-50 rounded-xl">
         <Link href={`/projects/${id}`}>
           <div className="w-11/12 m-auto py-3 ">
@@ -51,7 +51,7 @@ function ProjectItem({
           </div>
         </Link>
       </div>
-      <div className="md:w-1/2 flex flex-col gap-2">
+      <div className="md:w-1/2 flex flex-col gap-2 px-6 pb-3 md:px-0 md:pb-0">
         <h6 className="text-sm text-slate-700">
           {company.name} &middot; {timeline}
         </h6>

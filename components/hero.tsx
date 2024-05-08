@@ -28,10 +28,11 @@ export default function Hero() {
             A Frontend enthusiast with an eye for detail
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            I’m a self-taught Frontend Developer who loves React, TypeScript,
+            and CSS. I’m all about teamwork and learning new things and I enjoy
+            working together to create awesome user interfaces for the best user
+            experience. Always up for a challenge, I’m constantly exploring and
+            growing in the ever-evolving world of frontend development.
           </p>
           <div className="flex gap-5">
             <a

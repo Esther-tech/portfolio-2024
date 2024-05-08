@@ -5,14 +5,11 @@ export default function About() {
   return (
     <PageSection id="about" title="About me">
       <p>
-        At vero eos et accusamus et iusto odio dignissimos ducimus qui
-        blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-        et quas molestias excepturi sint occaecati cupiditate non provident,
-        similique sunt in culpa qui officia deserunt mollitia animi, id est
-        laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-        distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
-        cumque nihil impedit quo minus id quod maxime placeat facere possimus,
-        omnis voluptas assumenda est, omnis dolor repellendus.
+        A self-taught Frontend Developer who loves TypeScript, React, and CSS.
+        I’m all about teamwork and learning new things and I enjoy working
+        together to create awesome user experiences. Always up for a challenge,
+        I’m constantly exploring and growing in the ever-evolving world of
+        frontend development.
       </p>
     </PageSection>
   );
