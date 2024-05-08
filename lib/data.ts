@@ -12,14 +12,14 @@ export const navItems = [
     title: "Home",
     path: "/",
   },
-  { title: "Experience", path: "#experience" },
+  { title: "Experience", path: "/#experience" },
   {
     title: "Projects",
-    path: "#projects",
+    path: "/#projects",
   },
   {
     title: "Contact",
-    path: "#contact",
+    path: "/#contact",
   },
 ] as const;
 
