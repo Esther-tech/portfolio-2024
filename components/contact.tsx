@@ -15,7 +15,12 @@ export default function Contact() {
   const formRef = createRef<HTMLFormElement>();
 
   return (
-    <PageSection id="contact" title="Contact" indicator={indicator}>
+    <PageSection
+      id="contact"
+      title="Contact"
+      indicator={indicator}
+      tracker="Contact"
+    >
       <div className="max-w-xl m-auto">
         {toast.message && (
           <Toast

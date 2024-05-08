@@ -12,7 +12,7 @@ import { Tag } from "./tag";
 export default function Experience() {
   return (
     <div className="bg-[url('/images/experience-background.png')] bg-slate-50 bg-no-repeat bg-cover">
-      <PageSection id="experience">
+      <PageSection id="experience" tracker="Experience">
         <div className="relative">
           {experienceData.map((experience, i) => {
             const { title, company, companyIcon, year, tags } = experience;

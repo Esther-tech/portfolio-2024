@@ -21,7 +21,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
     project;
 
   return (
-    <PageSection>
+    <PageSection tracker="Projects">
       <div className="py-10 flex flex-col gap-7">
         <Link href="/#projects" className="flex items-center gap-2">
           <ArrowLeftIcon className="h-4 w-4" /> Back to projects

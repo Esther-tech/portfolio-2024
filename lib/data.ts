@@ -120,9 +120,7 @@ export const projectData = [
       ],
     },
     caseStudy: {
-      intro: [
-        "This case study delves into the collaborative effort between a frontend developer, a designer, and a backend developer to integrate role and permission management features into a large-scale application.",
-      ],
+      intro: ["intro"],
       body: ["body"],
       conclusion: ["conclusion"],
     },

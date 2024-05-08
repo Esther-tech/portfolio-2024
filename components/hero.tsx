@@ -5,7 +5,7 @@ import PageSection from "./pageSection";
 
 export default function Hero() {
   return (
-    <PageSection id="home">
+    <PageSection id="home" tracker="Home">
       <>
         <div className="flex gap-5 items-center">
           <div className="h-20 w-20 rounded-full overflow-hidden">
@@ -28,7 +28,7 @@ export default function Hero() {
             A Frontend enthusiast with an eye for detail
           </h2>
           <p>
-            I’m a self-taught Frontend Developer who loves React, TypeScript,
+            I’m a self-taught frontend developer who loves React, TypeScript,
             and CSS. I’m all about teamwork and learning new things and I enjoy
             working together to create awesome user interfaces for the best user
             experience. Always up for a challenge, I’m constantly exploring and

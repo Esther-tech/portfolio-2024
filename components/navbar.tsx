@@ -1,11 +1,11 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import { navItems } from "@/lib/data";
 import { motion } from "framer-motion";
+import { useActiveSectionContext } from "@/context/activeSectionContext";
 
 export default function Navbar({ onClose }: { onClose?: () => void }) {
-  const [activeSection, setActiveSection] = useState("Home");
+  const { activeSection, setActiveSection } = useActiveSectionContext();
 
   return (
     <>

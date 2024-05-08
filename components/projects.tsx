@@ -15,6 +15,7 @@ export default function Projects() {
       id="projects"
       title="Projects & case studies"
       indicator={indicator}
+      tracker="Projects"
     >
       <div className="flex flex-col gap-8">
         {projectData?.map((item) => {

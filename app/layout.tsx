@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Container from "@/components/container";
+import ActiveSectionContextProvider from "@/context/activeSectionContext";
 
 const inter = Archivo({ subsets: ["latin"] });
 
@@ -21,11 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body className={`${inter.className} bg-white text-slate-950`}>
-        <Container>
-          <Header />
-          <div>{children}</div>
-          <Footer />
-        </Container>
+        <ActiveSectionContextProvider>
+          <Container>
+            <Header />
+            <div>{children}</div>
+            <Footer />
+          </Container>
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );

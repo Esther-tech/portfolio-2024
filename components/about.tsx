@@ -3,7 +3,7 @@ import PageSection from "./pageSection";
 
 export default function About() {
   return (
-    <PageSection id="about" title="About me">
+    <PageSection id="about" title="About me" tracker="About">
       <p>
         A self-taught Frontend Developer who loves TypeScript, React, and CSS.
         I’m all about teamwork and learning new things and I enjoy working
