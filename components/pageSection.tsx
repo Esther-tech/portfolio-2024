@@ -34,7 +34,7 @@ export default function PageSection({
           <Image
             src={sectionDivider}
             alt="divider"
-            className="absolute right-0 top-1/2"
+            className="absolute right-0 top-1/2 hidden md:block"
           />
         </div>
       )}

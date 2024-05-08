@@ -29,7 +29,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
 
         <div className="flex flex-col gap-7">
           <h1 className="text-4xl">{title}</h1>
-          <div className="flex gap-20">
+          <div className="flex justify-between gap-5 pr-5 sm:pr-24">
             <div>
               <h3 className="text-lg font-bold flex">Company</h3>
               {company.name}
