@@ -52,14 +52,14 @@ export default function Contact() {
             name="sender"
             required
             placeholder="Your email"
-            className="border border-slate-200 w-full px-4 py-2 rounded-md"
+            className="border border-slate-300 w-full px-4 py-2 rounded-md"
           />
           <textarea
             required
             name="message"
             maxLength={500}
             placeholder="Your message"
-            className="border border-slate-200 rounded-md w-full p-4 h-52"
+            className="border border-slate-300 rounded-md w-full p-4 h-52"
           />
           <FormButton />
         </form>
