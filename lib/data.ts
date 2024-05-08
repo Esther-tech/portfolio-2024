@@ -107,7 +107,7 @@ export const projectData = [
   {
     id: 2,
     timeline: "2023 Q4",
-    duration: "10 weeks",
+    duration: "5 weeks",
     title: "Multi-user calendar management and adding availability",
     tags: ["React", "Typescript", "PostCss", "Git"],
     imageUrl: availabilityProject,
@@ -120,9 +120,19 @@ export const projectData = [
       ],
     },
     caseStudy: {
-      intro: ["intro"],
-      body: ["body"],
-      conclusion: ["conclusion"],
+      intro: [
+        "In many administrative tasks, such as scheduling interviews or appointments, managing overlapping availability of multiple users poses a significant challenge. In a recent project, our team tackled this issue head-on to empower admin users with a streamlined solution. The objective was clear: enable admins to view overlapping availability of up to five users simultaneously, facilitating efficient scheduling and management.",
+      ],
+      body: [
+        "To achieve this goal, we developed a modal interface featuring a weekly calendar view. Leveraging the power of Typescript, React, and GraphQL, we ensured a robust and responsive solution. The modal allowed admins to effortlessly toggle between users, selecting and deselecting up to five individuals at a time using intuitive checkboxes.",
+        "One of the key functionalities of the modal was the ability to incorporate personal events from selected users into the view, providing crucial context for scheduling decisions. Additionally, we implemented a feature to highlight overlapping availability sections across all selected users, enhancing visibility and facilitating decision-making.",
+        "Collaboration was at the heart of our approach. We worked closely with both the design and backend development teams to ensure seamless integration and optimal user experience. By leveraging React context API and hooks, we maintained state efficiently, ensuring smooth interaction within the interface.",
+        "One of the core challenges we encountered was accommodating users across different timezones. However, with careful consideration and implementation, we successfully integrated timezone adjustments based on user settings, ensuring a consistent and accurate view for all users.",
+      ],
+      conclusion: [
+        "In conclusion, the development of the multi-user availability view modal significantly enhances the admin user experience in managing overlapping availability. By providing a comprehensive overview of multiple users' schedules in a single interface, we've streamlined the scheduling process and improved efficiency.",
+        "Through collaboration, innovative use of technology, and a commitment to user-centric design, we've delivered a solution that not only meets but exceeds the needs of our clients. Moving forward, we remain dedicated to refining and expanding upon this foundation, continually striving to enhance the frontend experience for users across diverse administrative tasks.",
+      ],
     },
   },
   {
