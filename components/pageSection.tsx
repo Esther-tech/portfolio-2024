@@ -35,7 +35,7 @@ export default function PageSection({
     <section
       ref={ref}
       id={id}
-      className="py-10 px-3 sm:px-5 max-w-screen-md m-auto scroll-mt-10"
+      className="py-10 px-3 sm:px-5 max-w-screen-md m-auto scroll-mt-6 md:scroll-mt-10"
     >
       {title && (
         <div className="mb-8 flex gap-4  relative">

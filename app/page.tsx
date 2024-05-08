@@ -7,7 +7,7 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <main className="py-10">
+    <main className="py-5 md:py-10">
       <Hero />
       <Experience />
       <Projects />
