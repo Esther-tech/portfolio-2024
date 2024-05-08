@@ -64,7 +64,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
 
         <div className="flex flex-col gap-3">
           <h2 className="text-2xl capitalize">The project</h2>
-          <div className="flex gap-4 my-3">
+          <div className="flex gap-4 my-3 flex-wrap">
             {tags.map((tag, i) => (
               <Tag key={i} tag={tag} />
             ))}

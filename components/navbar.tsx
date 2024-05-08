@@ -29,7 +29,7 @@ export default function Navbar({ onClose }: { onClose?: () => void }) {
             </Link>
             {currentActive && (
               <motion.span
-                className="absolute h-[1px] bg-slate-600 -bottom-[0.15rem] -left-[5%] w-[110%] rounded-xl"
+                className="absolute h-[1px] bg-slate-600 -bottom-[0.15rem] -left-[5%] w-[110%] rounded-xl hidden md:block"
                 layoutId="activeSection"
                 transition={{
                   type: "spring",
