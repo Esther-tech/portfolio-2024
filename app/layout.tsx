@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Container from "@/components/container";
 import ActiveSectionContextProvider from "@/context/activeSectionContext";
+import DarkMode from "@/components/darkMode";
 
 const inter = Archivo({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
             <Footer />
           </Container>
         </ActiveSectionContextProvider>
+        <DarkMode />
       </body>
     </html>
   );
