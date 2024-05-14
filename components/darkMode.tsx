@@ -1,15 +1,19 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { SunIcon, MoonIcon } from "@heroicons/react/16/solid";
 
 export default function DarkMode() {
-  const localMode = window.localStorage.getItem("mode");
-  const darkPreference = window.matchMedia(
-    "(prefers-color-scheme: dark)"
-  ).matches;
-  const [darkMode, setDarkMode] = useState<boolean>(
-    () => localMode === "dark" || (!localMode && darkPreference) || false
-  );
+  const [darkMode, setDarkMode] = useState<boolean>(false);
+
+  useEffect(() => {
+    const localMode = window.localStorage.getItem("mode");
+    const darkPreference = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    setDarkMode(
+      localMode === "dark" || (!localMode && darkPreference) || false
+    );
+  }, []);
 
   return (
     <button
