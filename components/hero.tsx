@@ -44,7 +44,7 @@ export default function Hero() {
             </a>
             <Link
               href="#projects"
-              className="py-3 px-6 text-slate-950 rounded-xl hover:scale-105 focus:scale-105 transition"
+              className="py-3 px-6 text-slate-950 rounded-xl hover:scale-105 focus:scale-105 transition dark:text-slate-100"
             >
               My projects
             </Link>

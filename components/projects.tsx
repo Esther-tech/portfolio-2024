@@ -40,20 +40,20 @@ function ProjectItem({
 }: ItemProps) {
   return (
     <section className="flex gap-5 flex-col md:flex-row items-center w-[345px] sm:w-[500px] md:w-auto m-auto md:m-0 bg-slate-50 rounded-md md:bg-inherit">
-      <div className="md:w-1/2 overflow-hidden h-fit max-h-[15rem] bg-slate-50 rounded-xl">
+      <div className="md:w-1/2 overflow-hidden h-fit max-h-[15rem] bg-slate-50 dark:bg-slate-600 rounded-xl">
         <Link href={`/projects/${id}`}>
           <div className="w-11/12 m-auto py-3 ">
             <Image
               src={imageUrl}
               alt={title}
               height={2000}
-              className="w-[345px] sm:w-[500px] md:w-[400px]"
+              className="w-[345px] sm:w-[500px] md:w-[400px] rounded-sm dark:opacity-80"
             />
           </div>
         </Link>
       </div>
       <div className="md:w-1/2 flex flex-col gap-2 px-6 pb-3 md:px-0 md:pb-0">
-        <h6 className="text-sm text-slate-700">
+        <h6 className="text-sm text-slate-700 dark:text-slate-100">
           {company.name} &middot; {timeline}
         </h6>
         <Link href={`/projects/${id}`}>
