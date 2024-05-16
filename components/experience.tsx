@@ -11,7 +11,7 @@ import { Tag } from "./tag";
 
 export default function Experience() {
   return (
-    <div className="bg-[url('/images/experience-background.png')] bg-slate-50 dark:bg-slate-900 bg-no-repeat bg-cover">
+    <div className="bg-[url('/images/experience-background.png')] bg-slate-50 dark:bg-[#040f21] bg-no-repeat bg-cover">
       <PageSection id="experience" tracker="Experience">
         <div className="relative">
           {experienceData.map((experience, i) => {
