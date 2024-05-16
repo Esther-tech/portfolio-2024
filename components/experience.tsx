@@ -51,14 +51,10 @@ export default function Experience() {
                 <div
                   className={`w-2/12 sm:w-2/5 ${reverse && "sm:text-right"}`}
                 >
-                  <div className="inline-block py-2 px-3 mb-2 text-xs sm:text-sm bg-white dark:bg-slate-900 rounded-md relative">
-                    <Image
-                      src={arrow}
-                      width="8"
-                      height="8"
-                      alt="arrow"
-                      className={`absolute top-[30%] -right-[7px] rotate-180 dark:invert dark:opacity-80 ${
-                        !reverse && "sm:-left-[7px] sm:rotate-0"
+                  <div className="inline-flex h-10 items-center py-2 px-3 mb-2 text-xs sm:text-sm bg-white dark:bg-slate-900 rounded-md relative">
+                    <div
+                      className={`w-3 h-3 bg-white dark:bg-slate-900 absolute top-[35%] -right-[5px] rotate-45 ${
+                        !reverse && "sm:-left-[5px]"
                       }`}
                     />
                     <div>{year}</div>
