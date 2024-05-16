@@ -12,4 +12,10 @@
   & span {
     font-family: Noto_Serif_JP, serif;
   }
+
+  &.dark {
+    & p {
+      color: #fff;
+    }
+  }
 }

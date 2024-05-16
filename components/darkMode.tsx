@@ -15,19 +15,21 @@ export default function DarkMode() {
     );
   }, []);
 
+  const handleClick = () => {
+    const newMode = darkMode ? "light" : "dark";
+    setDarkMode(!darkMode);
+    window.localStorage.setItem("mode", newMode);
+    if (newMode === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  };
+
   return (
     <button
       className="fixed bottom-10 right-5 md:right-20 bg-white border border-slate-100 p-2 shadow-md rounded-lg"
-      onClick={() => {
-        const newMode = darkMode ? "light" : "dark";
-        setDarkMode(!darkMode);
-        window.localStorage.setItem("mode", newMode);
-        if (newMode === "dark") {
-          document.documentElement.classList.add("dark");
-        } else {
-          document.documentElement.classList.remove("dark");
-        }
-      }}
+      onClick={handleClick}
     >
       {darkMode ? (
         <MoonIcon height={16} width={16} className="fill-slate-400" />
