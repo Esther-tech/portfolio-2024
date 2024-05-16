@@ -39,7 +39,7 @@ function ProjectItem({
   imageUrl,
 }: ItemProps) {
   return (
-    <section className="flex gap-5 flex-col md:flex-row items-center w-[345px] sm:w-[500px] md:w-auto m-auto md:m-0 bg-slate-50 dark:bg-slate-700 rounded-md md:bg-inherit">
+    <section className="flex gap-5 flex-col md:flex-row items-center w-[345px] sm:w-[500px] md:w-auto m-auto md:m-0 bg-slate-50 dark:md:bg-slate-800 dark:bg-slate-700 rounded-md md:bg-inherit">
       <div className="md:w-1/2 overflow-hidden h-fit max-h-[15rem] bg-slate-50 dark:bg-slate-700 rounded-xl">
         <Link href={`/projects/${id}`}>
           <div className="w-11/12 m-auto py-3 ">
