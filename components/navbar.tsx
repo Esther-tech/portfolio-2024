@@ -15,8 +15,8 @@ export default function Navbar({ onClose }: { onClose?: () => void }) {
         return (
           <li
             key={path}
-            className={`relative font-bold hover:text-slate-600 transition duration-300 m-auto ${
-              currentActive && "text-slate-600"
+            className={`relative font-bold hover:text-slate-600 dark:hover:text-slate-100 transition duration-300 m-auto ${
+              currentActive && "text-slate-600 dark:text-slate-50"
             }`}
             onClick={onClose}
           >
@@ -29,7 +29,7 @@ export default function Navbar({ onClose }: { onClose?: () => void }) {
             </Link>
             {currentActive && (
               <motion.span
-                className="absolute h-[1px] bg-slate-600 -bottom-[0.15rem] -left-[5%] w-[110%] rounded-xl hidden md:block"
+                className="absolute h-[1px] bg-slate-600 dark:bg-slate-50 -bottom-[0.15rem] -left-[5%] w-[110%] rounded-xl hidden md:block"
                 layoutId="activeSection"
                 transition={{
                   type: "spring",

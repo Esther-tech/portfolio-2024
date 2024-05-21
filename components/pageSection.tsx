@@ -47,7 +47,7 @@ export default function PageSection({
               width={20}
             />
           )}
-          <h2 className="capitalize text-lg font-bold bg-white z-10 pr-10">
+          <h2 className="capitalize text-lg font-bold bg-white dark:bg-slate-800 z-10 pr-10">
             {title}
           </h2>
           <Image

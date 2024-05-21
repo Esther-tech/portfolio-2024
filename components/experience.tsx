@@ -11,7 +11,7 @@ import { Tag } from "./tag";
 
 export default function Experience() {
   return (
-    <div className="bg-[url('/images/experience-background.png')] bg-slate-50 bg-no-repeat bg-cover">
+    <div className="bg-[url('/images/experience-background.png')] bg-slate-50 dark:bg-[#040f21] bg-no-repeat bg-cover">
       <PageSection id="experience" tracker="Experience">
         <div className="relative">
           {experienceData.map((experience, i) => {
@@ -46,19 +46,15 @@ export default function Experience() {
                   width="18"
                   height="18"
                   alt="indicator"
-                  className="z-10 ml-[1px] relative self-start mt-2"
+                  className="z-10 ml-[1px] relative self-start mt-2 "
                 />
                 <div
                   className={`w-2/12 sm:w-2/5 ${reverse && "sm:text-right"}`}
                 >
-                  <div className="inline-block py-2 px-3 mb-2 text-xs sm:text-sm bg-white rounded-md relative">
-                    <Image
-                      src={arrow}
-                      width="8"
-                      height="8"
-                      alt="arrow"
-                      className={`absolute top-[30%] -right-[7px] rotate-180 ${
-                        !reverse && "sm:-left-[7px] sm:rotate-0"
+                  <div className="inline-flex h-10 items-center py-2 px-3 mb-2 text-xs sm:text-sm bg-white dark:bg-slate-900 rounded-md relative">
+                    <div
+                      className={`w-3 h-3 bg-white dark:bg-slate-900 absolute top-[35%] -right-[5px] rotate-45 ${
+                        !reverse && "sm:-left-[5px]"
                       }`}
                     />
                     <div>{year}</div>
@@ -68,6 +64,7 @@ export default function Experience() {
                     width="600"
                     height="20"
                     alt="divider"
+                    className="dark:invert"
                   />
                 </div>
               </div>
