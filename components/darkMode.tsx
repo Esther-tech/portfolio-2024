@@ -37,9 +37,9 @@ export default function DarkMode() {
       onClick={handleChange}
     >
       {darkMode ? (
-        <MoonIcon height={16} width={16} className="fill-slate-300" />
-      ) : (
         <SunIcon height={16} width={16} className="fill-slate-400" />
+      ) : (
+        <MoonIcon height={16} width={16} className="fill-slate-300" />
       )}
     </button>
   );
