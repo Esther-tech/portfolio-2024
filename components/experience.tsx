@@ -4,9 +4,8 @@ import React from "react";
 import PageSection from "./pageSection";
 import { experienceData } from "@/lib/data";
 import Image from "next/image";
-import arrow from "@/public/svg/arrow.svg";
-import divider from "@/public/svg/experience-vertical-divider.svg";
-import indicator from "@/public/svg/experience-indicator.svg";
+import Divider from "@/public/svg/experience-vertical-divider.svg";
+import Indicator from "@/public/svg/experience-indicator.svg";
 import { Tag } from "./tag";
 
 export default function Experience() {
@@ -42,7 +41,7 @@ export default function Experience() {
                   </div>
                 </div>
                 <Image
-                  src={indicator}
+                  src={Indicator}
                   width="18"
                   height="18"
                   alt="indicator"
@@ -71,7 +70,7 @@ export default function Experience() {
             );
           })}
           <Image
-            src={divider}
+            src={Divider}
             height="400"
             width="1"
             alt="vertical divider"

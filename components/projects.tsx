@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
 import { Tag } from "./tag";
-import indicator from "@/public/svg/section-indicator1.svg";
+import Indicator from "@/public/svg/section-indicator1.svg";
 
 type ItemProps = (typeof projectData)[number];
 
@@ -14,7 +14,7 @@ export default function Projects() {
     <PageSection
       id="projects"
       title="Projects & case studies"
-      indicator={indicator}
+      indicator={Indicator}
       tracker="Projects"
     >
       <div className="flex flex-col gap-8">

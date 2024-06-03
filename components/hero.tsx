@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import PageSection from "./pageSection";
+import { CodeBracketIcon } from "@heroicons/react/20/solid";
+import GithubIcon from "@/public/svg/github-icon.svg";
+import LinkedInIcon from "@/public/svg/linkedin-icon.svg";
 
 export default function Hero() {
   return (
@@ -21,6 +24,24 @@ export default function Hero() {
           <div>
             <h1 className="text-xl font-bold">Hi, I&apos;m Esther</h1>
             <p>Mid-level frontend developer</p>
+          </div>
+          <div className="flex gap-2 ml-auto">
+            <Link
+              href="https://github.com/Esther-tech"
+              passHref
+              target="_blank"
+              className="p-3 rounded-xl hover:scale-105 focus:scale-105 transition dark:bg-slate-300"
+            >
+              <Image src={GithubIcon} alt="divider" className="h-6 w-6" />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/esther-siebert-563597b5/"
+              passHref
+              target="_blank"
+              className="p-3 rounded-xl hover:scale-105 focus:scale-105 transition dark:bg-slate-300"
+            >
+              <Image src={LinkedInIcon} alt="divider" className="h-6 w-6" />
+            </Link>
           </div>
         </div>
         <div className="py-8 flex gap-8 flex-col">
@@ -44,7 +65,7 @@ export default function Hero() {
             </a>
             <Link
               href="#projects"
-              className="py-3 px-6 text-slate-950 rounded-xl hover:scale-105 focus:scale-105 transition dark:text-slate-100"
+              className="py-3 px-6 text-slate-950 rounded-xl hover:scale-105 focus:scale-105 transition  dark:text-slate-100"
             >
               My projects
             </Link>

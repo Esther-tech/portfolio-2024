@@ -5,7 +5,7 @@ const resend = new Resend(process.env.RESEND_API);
 
 const validInput = (value: unknown) => value && typeof value === "string";
 
-export const sendEmail = async (formData: FormData) => {
+export const sendEmail: any = async (formData: FormData) => {
   const sender = formData.get("sender");
   const message = formData.get("message");
 
@@ -25,3 +25,5 @@ export const sendEmail = async (formData: FormData) => {
 
   return { data, error: error && error.message };
 };
+
+export default sendEmail;

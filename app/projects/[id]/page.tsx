@@ -3,7 +3,7 @@ import { projectData } from "@/lib/data";
 import PageSection from "@/components/pageSection";
 import Image from "next/image";
 import NotFound from "./notFound";
-import horizontalDivider from "@/public/svg/horizontal-divider.svg";
+import HorizontalDivider from "@/public/svg/horizontal-divider.svg";
 import Link from "next/link";
 import { ArrowLeftIcon } from "@heroicons/react/16/solid";
 import { Tag } from "@/components/tag";
@@ -45,7 +45,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           </div>
         </div>
 
-        <Image src={horizontalDivider} alt="divider" className="-ml-[7px]" />
+        <Image src={HorizontalDivider} alt="divider" className="-ml-[7px]" />
 
         <div className="bg-slate-50 dark:bg-slate-500 rounded-md border border-slate-200 dark:border-slate-300">
           <div className="overflow-hidden w-5/6 pt-10 m-auto">
@@ -66,7 +66,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           ))}
         </div>
 
-        <Image src={horizontalDivider} alt="divider" className="-ml-[7px]" />
+        <Image src={HorizontalDivider} alt="divider" className="-ml-[7px]" />
 
         <div className="flex flex-col gap-3">
           <h2 className="text-2xl capitalize">The project</h2>

@@ -4,7 +4,7 @@ import PageSection from "./pageSection";
 import { sendEmail } from "@/actions/sendEmail";
 import FormButton from "./formButton";
 import Toast from "./toast";
-import indicator from "@/public/svg/section-indicator2.svg";
+import Indicator from "@/public/svg/section-indicator2.svg";
 
 export default function Contact() {
   const [toast, setToast] = useState<{
@@ -18,7 +18,7 @@ export default function Contact() {
     <PageSection
       id="contact"
       title="Contact"
-      indicator={indicator}
+      indicator={Indicator}
       tracker="Contact"
     >
       <div className="max-w-xl m-auto">

@@ -2,7 +2,7 @@
 
 import Image, { StaticImageData } from "next/image";
 import { ReactNode, useEffect } from "react";
-import sectionDivider from "@/public/svg/section-divider.svg";
+import SectionDivider from "@/public/svg/section-divider.svg";
 import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/activeSectionContext";
 import { navItems } from "@/lib/data";
@@ -51,7 +51,7 @@ export default function PageSection({
             {title}
           </h2>
           <Image
-            src={sectionDivider}
+            src={SectionDivider}
             alt="divider"
             className="absolute right-0 top-1/2 hidden md:block"
           />
