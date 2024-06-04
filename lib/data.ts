@@ -74,7 +74,33 @@ export const skills = [
 
 export const projectData = [
   {
-    id: 1,
+    id: 4,
+    timeline: "2024 Q2",
+    duration: "2 weeks",
+    title: "HackFS Hackathon",
+    tags: [
+      "Next.js",
+      "Tailwind.css",
+      "Scaffold-ETH",
+      "Hardhat",
+      "Filecoin",
+      "ENS",
+    ],
+    imageUrl: "",
+    company: {
+      name: "Filtion",
+      icon: "",
+      website: "",
+      info: [""],
+    },
+    caseStudy: {
+      intro: [""],
+      body: [""],
+      conclusion: [""],
+    },
+  },
+  {
+    id: 3,
     timeline: "2023 Q1-Q3",
     duration: "30 weeks",
     title: "Enhancing user roles and permissions management",
@@ -136,7 +162,7 @@ export const projectData = [
     },
   },
   {
-    id: 3,
+    id: 1,
     timeline: "2023 Q3",
     duration: "3 weeks",
     title:
