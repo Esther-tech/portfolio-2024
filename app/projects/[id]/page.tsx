@@ -50,7 +50,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
         <div className="bg-slate-50 dark:bg-slate-500 rounded-md border border-slate-200 dark:border-slate-300">
           <div className="overflow-hidden w-5/6 pt-10 m-auto">
             <Image
-              src={imageUrl}
+              src={imageUrl[0]}
               alt={title}
               width={5000}
               height={5000}
@@ -83,6 +83,17 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
               </p>
             ))}
           </div>
+          {imageUrl[1] && (
+            <div className="overflow-hidden w-5/6 p-10 rounded-lg bg-slate-100 dark:bg-slate-500 mb-10">
+              <Image
+                src={imageUrl[1]}
+                alt={title}
+                width={5000}
+                height={5000}
+                className="rounded-md dark:opacity-80"
+              />
+            </div>
+          )}
           <div>
             <h3 className="mb-4 capitalize">Case study</h3>
             {caseStudy.body.map((section, i) => (
@@ -99,6 +110,17 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
               </p>
             ))}
           </div>
+          {imageUrl[2] && (
+            <div className="overflow-hidden p-10 m-auto rounded-lg bg-slate-100 dark:bg-slate-500 mb-10">
+              <Image
+                src={imageUrl[2]}
+                alt={title}
+                width={5000}
+                height={5000}
+                className="rounded-md dark:opacity-80"
+              />
+            </div>
+          )}
         </div>
       </div>
     </PageSection>

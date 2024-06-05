@@ -44,7 +44,7 @@ function ProjectItem({
         <Link href={`/projects/${id}`}>
           <div className="w-11/12 m-auto py-3 ">
             <Image
-              src={imageUrl}
+              src={imageUrl[0]}
               alt={title}
               height={2000}
               className="w-[345px] sm:w-[500px] md:w-[400px] rounded-md dark:opacity-80"
