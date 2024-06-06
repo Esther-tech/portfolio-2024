@@ -82,7 +82,7 @@ export const projectData = [
     id: 4,
     timeline: "2024 Q2",
     duration: "2 weeks",
-    title: "HackFS | Filtion; a Web3 Name Service for Decentralized Blogs",
+    title: "Hackathon project; a Web3 Name Service for Decentralized Blogs",
     tags: [
       "Next.js",
       "Tailwind.css",
