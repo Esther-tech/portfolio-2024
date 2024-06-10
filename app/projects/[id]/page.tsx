@@ -7,6 +7,7 @@ import HorizontalDivider from "@/public/svg/horizontal-divider.svg";
 import Link from "next/link";
 import { ArrowLeftIcon } from "@heroicons/react/16/solid";
 import { Tag } from "@/components/tag";
+import { LinkIcon } from "@heroicons/react/16/solid";
 
 export default function ProjectPage({ params }: { params: { id: string } }) {
   const project = projectData.find(
@@ -17,8 +18,17 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
     return <NotFound />;
   }
 
-  const { title, imageUrl, tags, company, timeline, duration, caseStudy } =
-    project;
+  const {
+    title,
+    imageUrl,
+    tags,
+    company,
+    timeline,
+    duration,
+    caseStudy,
+    demoUrl,
+    codeUrl,
+  } = project;
 
   return (
     <PageSection tracker="Projects">
@@ -60,7 +70,19 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
         </div>
 
         <div className="flex flex-col gap-3">
-          <h3 className="text-lg font-bold capitalize">Company info</h3>
+          <div className="flex gap-3">
+            <h3 className="text-lg font-bold capitalize">Company info</h3>
+            {company.website && (
+              <Link
+                href={company.website}
+                passHref
+                target="_blank"
+                className="flex gap-1 items-center text-xs py-1 px-2 rounded-xl hover:scale-105 focus:scale-105 hover:bg-slate-200 transition"
+              >
+                <LinkIcon className="w-3 h-3" />
+              </Link>
+            )}
+          </div>
           {company.info.map((section, i) => (
             <p key={i}>{section}</p>
           ))}
@@ -69,7 +91,31 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
         <Image src={HorizontalDivider} alt="divider" className="-ml-[7px]" />
 
         <div className="flex flex-col gap-3">
-          <h2 className="text-2xl capitalize">The project</h2>
+          <div className="flex">
+            <h2 className="text-2xl capitalize">The project</h2>
+            <div className="flex ml-auto gap-3">
+              {demoUrl && (
+                <Link
+                  href={demoUrl}
+                  passHref
+                  target="_blank"
+                  className="py-2 px-4 bg-slate-950 text-white text-sm rounded-xl hover:scale-105 focus:scale-105 transition"
+                >
+                  Demo
+                </Link>
+              )}
+              {codeUrl && (
+                <Link
+                  href={codeUrl}
+                  passHref
+                  target="_blank"
+                  className="py-2 px-4 text-slate-950 bg-slate-100 rounded-xl hover:scale-105 focus:scale-105 transition text-sm dark:text-slate-100 dark:bg-transparent"
+                >
+                  Source code
+                </Link>
+              )}
+            </div>
+          </div>
           <div className="flex gap-4 my-3 flex-wrap">
             {tags.map((tag, i) => (
               <Tag key={i} tag={tag} />

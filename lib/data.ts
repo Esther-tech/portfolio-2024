@@ -82,6 +82,8 @@ export const projectData = [
     id: 4,
     timeline: "2024 Q2",
     duration: "2 weeks",
+    demoUrl: "https://ethglobal.com/showcase/filtion-i0rnb",
+    codeUrl: "https://github.com/Filtion/filtion-hack",
     title: "Hackathon project; a Web3 Name Service for Decentralized Blogs",
     tags: [
       "Next.js",
@@ -119,6 +121,8 @@ export const projectData = [
     id: 3,
     timeline: "2023 Q4",
     duration: "5 weeks",
+    demoUrl: "",
+    codeUrl: "",
     title: "Multi-user calendar management and adding availability",
     tags: ["React", "Typescript", "PostCss", "Git"],
     imageUrl: [availabilityProject],
@@ -150,6 +154,8 @@ export const projectData = [
     id: 2,
     timeline: "2023 Q1-Q3",
     duration: "30 weeks",
+    demoUrl: "",
+    codeUrl: "",
     title: "Enhancing user roles and permissions management",
     tags: ["React", "Typescript", "GraphQL", "PostCSS", "Formik", "Yup", "Git"],
     imageUrl: [rolesProject],
@@ -182,13 +188,15 @@ export const projectData = [
     id: 1,
     timeline: "2023 Q3",
     duration: "3 weeks",
+    demoUrl: "https://www.addaywellness.com/",
+    codeUrl: "",
     title:
       "Customizing a shopify webshop: a case study in Liquid and JavaScript",
     tags: ["JavaScript", "Liquid", "Shopify", "Git", "CSS"],
     imageUrl: [addayProject1, addayProject2],
     company: {
       name: "Adday Wellness",
-      website: "",
+      website: "https://www.addaywellness.com/",
       icon: adday,
       info: [
         "Adday is dedicated to promoting holistic health through functional foods that nurture the body and mind. Their range of nutrition supplements is meticulously crafted with probiotics, prebiotics, and natural ingredients to support healthy digestion, gut health, and overall wellness. With a focus on plant-based, clean eating, we aim to empower individuals on their journey towards a healthier lifestyle. From immune support to weight balance and mind focus, our products are designed to help you achieve your wellness goals. At Adday, we believe in the transformative power of small habits and are committed to supporting your holistic well-being, one step at a time.",
