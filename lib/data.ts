@@ -20,7 +20,7 @@ export const navItems = [
   { title: "Experience", path: "/#experience" },
   {
     title: "Projects",
-    path: "/#projects",
+    path: "/projects",
   },
   {
     title: "Contact",
@@ -84,7 +84,7 @@ export const projectData = [
     duration: "2 weeks",
     demoUrl: "https://ethglobal.com/showcase/filtion-i0rnb",
     codeUrl: "https://github.com/Filtion/filtion-hack",
-    title: "Hackathon project; a Web3 Name Service for Decentralized Blogs",
+    title: "A Web3 Name Service for Decentralized Blogs",
     tags: [
       "Next.js",
       "Tailwind.css",

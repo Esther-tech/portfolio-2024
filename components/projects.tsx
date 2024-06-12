@@ -9,7 +9,8 @@ import Indicator from "@/public/svg/section-indicator1.svg";
 
 type ItemProps = (typeof projectData)[number];
 
-export default function Projects() {
+export default function Projects({ showAll }: { showAll?: boolean }) {
+  const displayData = showAll ? projectData : projectData.slice(0, 3);
   return (
     <PageSection
       id="projects"
@@ -18,13 +19,23 @@ export default function Projects() {
       tracker="Projects"
     >
       <div className="flex flex-col gap-8">
-        {projectData?.map((item) => {
+        {displayData?.map((item) => {
           return (
             <React.Fragment key={item.id}>
               <ProjectItem {...item} />
             </React.Fragment>
           );
         })}
+      </div>
+      <div className="mt-10 flex">
+        {!showAll && (
+          <Link
+            href="/projects"
+            className="m-auto bg-[#4DA5F5] rounded-full  px-5 py-3  dark:bg-slate-700 text-white"
+          >
+            View all
+          </Link>
+        )}
       </div>
     </PageSection>
   );
