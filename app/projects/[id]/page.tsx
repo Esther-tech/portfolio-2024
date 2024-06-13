@@ -84,7 +84,9 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
             )}
           </div>
           {company.info.map((section, i) => (
-            <p key={i}>{section}</p>
+            <p className="text-lg" key={i}>
+              {section}
+            </p>
           ))}
         </div>
 
@@ -124,7 +126,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           <div>
             <h3 className="capitalize mb-3">Introduction</h3>
             {caseStudy.intro.map((section, i) => (
-              <p key={i} className="mb-4">
+              <p key={i} className="mb-4 text-lg">
                 {section}
               </p>
             ))}
@@ -143,7 +145,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           <div>
             <h3 className="mb-4 capitalize">Case study</h3>
             {caseStudy.body.map((section, i) => (
-              <p key={i} className="mb-4">
+              <p key={i} className="mb-4 text-lg">
                 {section}
               </p>
             ))}
@@ -151,7 +153,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           <div>
             <h3 className="mb-4 capitalize">Conclusion</h3>
             {caseStudy.conclusion.map((section, i) => (
-              <p key={i} className="mb-4">
+              <p key={i} className="mb-4 text-lg">
                 {section}
               </p>
             ))}
