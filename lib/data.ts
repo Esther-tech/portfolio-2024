@@ -84,7 +84,7 @@ export const projectData = [
     duration: "2 weeks",
     demoUrl: "https://ethglobal.com/showcase/filtion-i0rnb",
     codeUrl: "https://github.com/Filtion/filtion-hack",
-    title: "A Web3 Name Service for Decentralized Blogs",
+    title: "Web3 Name Service for Decentralized Blogs",
     tags: [
       "Next.js",
       "Tailwind.css",
